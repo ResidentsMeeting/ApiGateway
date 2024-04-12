@@ -1,0 +1,27 @@
+
+### 1. 안건 생성
+POST {{gateway-url}}/api/agenda/
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAbmF2ZXIuY29tIiwicm9sZXMiOlsiVU5SRUdJU1RFUkVEIl0sImlhdCI6MTY5NzQzODI1MCwiZXhwIjoxNjk3NTI0NjUwfQ.bwjsDTs4gnCdvy5ccl2ESWh4_hCwX7UXCS-fU6fltQVu-T_gQHFNvAPTWItY8MJ2cuYTLWvKJm5VSWseUMDLQg
+
+{
+  "title": "제목",
+  "details": "설명",
+  "endDate": "2023-10-31",
+  "secret": false,
+  "selectOptionCreationDtoList": [
+    {
+      "summary": "찬성",
+      "details": "찬성입니다."
+    },
+    {
+      "summary": "반대",
+      "details": "반대입니다."
+    }
+  ]
+}
+
+### 2. 안건 조회
+GET {{gateway-url}}/api/agenda/22
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAbmF2ZXIuY29tIiwicm9sZXMiOlsiVU5SRUdJU1RFUkVEIl0sImlhdCI6MTY5NzQzODI1MCwiZXhwIjoxNjk3NTI0NjUwfQ.bwjsDTs4gnCdvy5ccl2ESWh4_hCwX7UXCS-fU6fltQVu-T_gQHFNvAPTWItY8MJ2cuYTLWvKJm5VSWseUMDLQg
