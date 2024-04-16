@@ -1,6 +1,9 @@
 server:
   port: 8000
 
+token:
+  secret: secret
+
 spring:
   cloud:
     gateway:
@@ -46,10 +49,6 @@ spring:
             - Path=/api/vote/**, /api/agenda/**
           filters:
             - AuthorizationHeaderFilter
-  config:
-    import: aws-secretsmanager://config-server
-
-
 
 management:
   endpoints:
