@@ -2,9 +2,6 @@ server:
   port: 8000
 
 spring:
-  config:
-    import: aws-secretsmanager:resident_meeting
-
   cloud:
     gateway:
       routes:
